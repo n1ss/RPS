@@ -3,6 +3,13 @@
 </head>
 
 <body>
+    {{> mainBox}}
+</body>
+
+<template name='mainBox'>
+  <div class='container'>
+    {{> loginButtons}}
+
     <p>Rock - Paper - Scissors</p>
     <p>Choose one:</p>
     <p>
@@ -12,4 +19,5 @@
     </p>
     <div id="result"></div>
     <div id="log"></div>
-</body>
+  </div>
+</template>
