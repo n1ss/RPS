@@ -9,15 +9,22 @@
 <template name='mainBox'>
   <div class='container'>
     {{> loginButtons}}
+    {{> gameContainer}}<br />
+    {{> resultContainer}}
+  </div>
+</template>
 
+<template name='gameContainer'>
     <p>Rock - Paper - Scissors</p>
     <p>Choose one:</p>
     <p>
-        <button data-type="1">Rock</button>
-        <button data-type="2">Paper</button>
-        <button data-type="3">Scissors</button>
+        <button class="btn btn-primary" data-type="1">Rock</button>
+        <button class="btn btn-primary" data-type="2">Paper</button>
+        <button class="btn btn-primary" data-type="3">Scissors</button>
     </p>
+</template>
+
+<template name='resultContainer'>
     <div id="result"></div>
     <div id="log"></div>
-  </div>
 </template>
