@@ -1,30 +1,4 @@
-<head>
-  <title>rps</title>
-  <style>
-    body {
-        text-align: center;
-    }
-
-    #log {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 300px;
-        height: 100%;
-        overflow: scroll;
-        text-align: left;
-    }
-
-    #log p {
-        margin: 0px;
-    }
-
-    #result {
-        font-size: 40px;
-    }
-  </style>
-  <script type="text/javascript">
-    var rps = {
+var rps = {
         trinkets: document.getElementsByTagName('button'),
         playerChoice: function(val) {
             this.player = parseInt(val);
@@ -101,18 +75,3 @@
     }
    
     window.onload = init;
-    
-  </script>
-</head>
-
-<body>
-    <p>Rock - Paper - Scissors</p>
-    <p>Choose one:</p>
-    <p>
-        <button data-type="1">Rock</button>
-        <button data-type="2">Paper</button>
-        <button data-type="3">Scissors</button>
-    </p>
-    <div id="result"></div>
-    <div id="log"></div>
-</body>
